@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 env:
-  DbPassword: password
+  DbPassword: ${{secrets.DBPASSWORD}}
 
 jobs:
   build:
