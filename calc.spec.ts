@@ -16,3 +16,10 @@ describe("Calculator Tests", () =>{
         expect(prod).toBe(6);
     })
 })
+
+describe("Accessing environment variables", ()=>{
+    it("Should read an evnironment variable", () =>{
+        const password = process.env.DbPassword;
+        expect(password).toBeTruthy();
+    });
+});
